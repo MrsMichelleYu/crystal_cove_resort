@@ -1,0 +1,35 @@
+form {
+    width: 675px;
+    margin: 0 auto;
+    margin-top: 95px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin-left: 200px;
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+.email {
+    margin-left: -16px;
+}
+
+#email {
+    margin-left: -16px;
+}
+
+.btn {
+    margin-left: 13em;
+}

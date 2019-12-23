@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Cove Resort</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/dining.css' %}">    
+</head>
+
+<body>
+    <ul id="header" class="nav navbar-expand-lg nav-fill">
+        <a href="/">
+            <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        </a><br>
+        <li class="nav-item">
+            <a class="nav-link active" href="/rooms">ROOMS</a>
+        </li>
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESERVATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/reservation">Make a Reservation</a>
+            <a class="dropdown-item" href="/update">Update Existing Reservation</a>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link active" href="/dining">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wellness">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wedding">SPECIAL EVENTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/contact">CONTACT US</a>
+        </li>
+    </ul>
+    <br>
+    <div class="images_container">
+        <div class="gallery" id="gallery">
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="{% static 'hotel_app/images/poolside_couple.jpg' %}" alt="Card image cap">
+            </div>
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="{% static 'hotel_app/images/oysters.jpg' %}" alt=" Card image cap">
+            </div>
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="{% static 'hotel_app/images/chef.jpg' %}" alt="Card image cap">
+            </div>
+            <p class="text-center dining">Dining Options</p>
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid pizza" src="{% static 'hotel_app/images/pizza.jpg' %}" alt="Card image cap">
+            </div>
+            <br>
+            <br>
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="{% static 'hotel_app/images/shrimp.jpg' %}" alt="Card image cap">
+            </div>
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="{% static 'hotel_app/images/steak.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="dining_container">
+        <p class=" text-center dining_intro">Crystal Cove restaurants are carefully designed for a diverse dining
+            experience in a
+            variety of atmospheres.
+            You'll enjoy a genuine culinary adventure in Aruba, provided by our world-class chefs and ranging from our
+            gourmet menus to casual dining, and from a lobby lounge to a fun beach bar.</p>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <img class="img-fluid" src="{% static 'hotel_app/images/restaurant1.jpg' %}" alt="beach_restaurant">
+        </div>
+        <div class="col">
+            <br>
+            <h3 class="text-center">Sunset Grille Restaurant</h3>
+            <p class="restaurant">Enjoy an unforgettable dining experience and breathtaking scenery at Sunset
+                Grille, an energetic,
+                modern steakhouse. Diners enjoy a variety of steaks, chops, and a selection of succulent seafood -
+                all among awe-inspiring views.</p>
+            <p class="hours">HOURS</p>
+            <p class="days">MONDAY - SUNDAY 8:30 am - 10:30 pm</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+            <br>
+            <h3 class="text-center">Water's Edge Dining</h3>
+            <p class="restaurant">Enjoy a romantic gourmet dinner by the beach with great views and the refreshing
+                Caribbean breeze. Offering gourmet
+                seafood, steaks, and pasta.</p>
+            <p class="hours">HOURS</p>
+            <p class="days">MONDAY - SUNDAY 5:30 pm - 10:30 pm</p>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="{% static 'hotel_app/images/restaurant2.jpg' %}" alt="beachside_restaurant">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <img class="img-fluid" src="{% static 'hotel_app/images/bar.jpg' %}" alt="beach_restaurant">
+        </div>
+        <div class="col">
+            <br>
+            <h3 class="text-center">Barefoot Beachside Bar</h3>
+            <p class="restaurant">Cool off while you sip a refreshing beverage and enjoy delicious fresh bites including
+                starters, salads, burgers and more at Castaways Bar. Stop by during sunset to celebrate the end of
+                another beautiful day in Aruba with daily happy hour on frozen and tropical libations and a selection of
+                local and draught beers.</p>
+            <p class="hours">HOURS</p>
+            <p class="days">MONDAY - SUNDAY 10:00 am - 6:00 pm</p>
+            <p class="days">DAILY HAPPY HOUR 4:00 pm - 6:00 pm</p>
+            <p class="hours">LIVE ENTERTAINMENT</p>
+            <p class="days">WEDNESDAY, SATURDAY, & SUNDAY: 4:00pm-6:00pm</p>
+        </div>
+    </div>
+</body>
+
+
+</html>

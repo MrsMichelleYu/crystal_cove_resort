@@ -1,0 +1,93 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    background-color: white;
+    margin-top: -25px;
+}
+
+/* .images_container {
+    outline: red dotted;
+    width: 67%;
+    height: 20%;
+    margin-left: 16%;
+} */
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.dining,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #79C9C1;
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+}
+
+.dining_intro {
+    color: #B3B2AF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+}
+
+.restaurant {
+    color: #B3B2AF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.hours {
+    color: #79C9C1;
+}
+
+.days {
+    color: #104C97;
+}
+
+.row {
+    background-color: #F9F6EE;
+}
+
+@media (max-width: 500px) {
+
+    .gallery,
+    .row {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+
+    .restaurant {
+        color: #B3B2AF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+    }
+}

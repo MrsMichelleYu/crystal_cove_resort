@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+.row {
+    margin-left: 100px;
+
+}
+
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+li,
+.btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    background-color: #79C9C1;
+}
+
+.r_image1 {
+    background-image: url("/static/hotel_app/images/king.jpg");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 112%;
+}
+
+.r_image2 {
+    background-image: url("/static/hotel_app/images/queen.jpg");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 112%;
+}
+
+.r_image3 {
+    background-image: url("/static/hotel_app/images/deluxe.jpg");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 112%;
+}
+
+.r_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.res {
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin-left: -15%;
+    }
+}

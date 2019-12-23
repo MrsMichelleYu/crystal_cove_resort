@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Cove Resort</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Sacramento&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Sacramento&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/wedding.css' %}"> 
+</head>
+
+<body>
+    <ul id="header" class="nav navbar-expand-lg nav-fill">
+        <a href="/">
+            <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        </a><br>
+        <li class="nav-item">
+            <a class="nav-link active" href="/rooms">ROOMS</a>
+        </li>
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESERVATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/reservation">Make a Reservation</a>
+            <a class="dropdown-item" href="/update">Update Existing Reservation</a>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link active" href="/dining">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wellness">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wedding">SPECIAL EVENTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/contact">CONTACT US</a>
+        </li>
+    </ul>
+    <br>
+    <div class="container">
+        <h1 class="text-center">Special Events</h1>
+        <p class="text-center">What better to place to say "I Do" than at Aruba? A postcard-perfect destination for an
+            island wedding, Crystal
+            Cove Resort on Aruba’s widest beach captures the essence of romance and tropical island splendor. </p>
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+
+                <img src="{% static 'hotel_app/images/wedding.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo1">
+
+                <img src="{% static 'hotel_app/images/wedding1.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo2">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <img src="{% static 'hotel_app/images/wedding2.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo3">
+
+                <img src="{% static 'hotel_app/images/wedding3.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo4">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <img src="{% static 'hotel_app/images/wedding4.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo5">
+
+                <img src="{% static 'hotel_app/images/wedding5.jpg' %}" class="img-fluid mb-4 rounded images"
+                    alt="wedding_photo6">
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+        <p class="text-center">For more information and special requests, please contact our Wedding and Events
+            Coordinator Team at weddings@crystalcove.com</p>
+        <br>
+        <br>
+        <h3 class="text-center">"</h3>
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <p class="reviews">"I was really nervous at first about having a destination wedding, especially
+                        since I would not be present for most of the wedding preparation. However, the Wedding Events
+                        Team was so helpful and prompt with communication, the wedding went exactly as I imagined!
+                        Couldn't have asked for a more perfect, intimate wedding at Aruba!"
+                    </p>
+                    <p class="reviews">- Alice, a grateful Bride</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <p class="reviews">"Growing up in a beach city, I've always dreamed of having a tropical wedding
+                        near the water. Crystal Cove Resort was a perfect place for my destination wedding, they were
+                        very flexible with my special requests and even had a plan B, just in case it started to rain.
+                        Thankfully the weather was perfect and my wedding at Aruba was absolutely stunning!"</p>
+                    <p class="reviews">- Erin, a grateful Bride</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <p class="reviews">"The Wedding Events team went above and beyond my expectations throughout my
+                        wedding planning. Despite how busy the Events Coordinator was with multiple weddings per week,
+                        she always managed to answer my emails within 12-24 hours. I was very picky with how I wanted
+                        everything arranged and everything was executed perfectly on the day of. It was very important
+                        for me to just be able to sit back and relax on your wedding day and Crystal Cove Resort made
+                        that a possibility. I would highly recommend them to any other bride-to-be."</p>
+                    <p class="reviews">- Jackie, a grateful Bride</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>

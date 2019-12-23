@@ -1,0 +1,37 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    /* background-color: white; */
+    margin-top: -25px;
+}
+
+.total {
+    color: #B3B2AF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #79C9C1 !important;
+    margin-left: 25em;
+}
+
+.link {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}

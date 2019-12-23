@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Cove Resort</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Sacramento&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/spa.css' %}"> 
+</head>
+
+<body>
+    <ul id="header" class="nav navbar-expand-lg nav-fill">
+        <a href="/">
+            <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        </a><br>
+        <li class="nav-item">
+            <a class="nav-link active" href="/rooms">ROOMS</a>
+        </li>
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESERVATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/reservation">Make a Reservation</a>
+            <a class="dropdown-item" href="/update">Update Existing Reservation</a>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link active" href="/dining">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wellness">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wedding">SPECIAL EVENTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/contact">CONTACT US</a>
+        </li>
+    </ul>
+    <h1 class="text-center">Tierra del Sol Spa</h1>
+    <p class="text-center">Overlooking the turquoise blue sea, Tierra del Sol Spa is our Caribbean spa oasis. A
+        wonderful
+        selection of
+        individualized treatments, including bamboo, hot stone and shiatsu massage therapy, help to relax your body
+        and restore your balance. To reserve a spa service, contact us by phone or email at 297 582 6145 or
+        info@tierradelsol.com.</p>
+    <p class="text-center hours">HOURS:</p>
+    <p class="text-center times">Monday – Saturday | 9 am – 6 pm</p>
+    <p class="text-center times">Sunday | 10 am – 2 pm</p>
+    <div class="card_container">
+        <div class="card-deck">
+            <div class="card">
+                <img src="{% static 'hotel_app/images/massage.jpg' %}" class="card-img-top" alt="massage">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Full Body Massage</h5>
+                    <div class="row">
+                        <div class="col sm-6">
+                            <ul>
+                                <li>Therapeutic</li>
+                                <li>Deep</li>
+                                <li>Stone</li>
+                                <li>Shiatsu</li>
+                                <li>Bamboo</li>
+                            </ul>
+                        </div>
+                        <div class="col sm-6">
+                            <ul>
+                                <li>Additional Packages:
+                                    <ul>
+                                        <li>Aromatherapy</li>
+                                        <li>Mud Wraps</li>
+                                        <li>Salt Body Scrubs</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'hotel_app/images/facial1.jpg' %}" class="card-img-top facial" alt="facial">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Facials</h5>
+                    <div class="row">
+                        <div class="col sm-6">
+                            <ul>
+                                <li>European</li>
+                                <li>Brightening</li>
+                                <li>Rosasea</li>
+                                <li>Acne Clearing</li>
+                                <li>Anti-Aging</li>
+                            </ul>
+                        </div>
+                        <div class="col sm-6">
+                            <ul>
+                                <li>Add-Ons:
+                                    <ul>
+                                        <li>Vitamin C</li>
+                                        <li>Collagen Mask</li>
+                                        <li>Aloe</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'hotel_app/images/pedicure1.jpg' %}" class="card-img-top manicure" alt="pedicure">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Manicures/Pedicures</h5>
+                    <div class="row">
+                        <div class="col sm-4">
+                            <ul>
+                                <li>Regular</li>
+                                <li>Gel</li>
+                                <li>Acrylic</li>
+                            </ul>
+                        </div>
+                        <div class="col sm-8">
+                            <ul>
+                                <li>Add-Ons:
+                                    <ul>
+                                        <li>Nail Art</li>
+                                        <li>French Tip</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card_container">
+        <div class="card-deck">
+            <div class="card">
+                <img src="{% static 'hotel_app/images/wax.jpg' %}" class="card-img-top wax" alt="massage">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Body Waxing</h5>
+                    <div class="row">
+                        <div class="col sm-6">
+                            <ul>
+                                <li>Half Arm</li>
+                                <li>Full Arm</li>
+                                <li>Arm Pit</li>
+                                <li>Half Leg</li>
+                                <li>Full Leg</li>
+                            </ul>
+                        </div>
+                        <div class="col sm-6">
+                            <ul>
+                                <li>Back</li>
+                                <li>Bikini Line</li>
+                                <li>Lip</li>
+                                <li>Chin</li>
+                                <li>Eye Brow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'hotel_app/images/pool.jpg' %}" class="card-img-top facial" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Infinity Pool</h5>
+                    <p class="info">While waiting for your spa treatments, relax in our warm infinity pool overlooking
+                        the scenic
+                        ocean.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'hotel_app/images/lounge.jpg' %}" class="card-img-top manicure" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Spa Lounge</h5>
+                    <p class="info">After a whole day of spa services, slip into a plush white robe and relax with
+                        others in our spa lounge downstairs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="return">
+        <a href="/wellness" class="return_link">Return to Wellness Section</a>
+    </div>
+    <br>
+</body>
+
+</html>

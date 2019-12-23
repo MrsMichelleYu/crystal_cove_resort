@@ -1,0 +1,46 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+#header {
+    background-color: white;
+    margin-top: -25px;
+}
+
+.card {
+    background-color: #F9F6EE;
+    margin-left: 12%;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+h5,
+.subhead {
+    font-family: 'Open Sans', sans-serif;
+    color: #79C9C1;
+}
+
+p,
+li,
+.return_link {
+    color: #F29C38;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.images_container {
+    display: inline-block;
+}
+
+.return {
+    text-align: center;
+}

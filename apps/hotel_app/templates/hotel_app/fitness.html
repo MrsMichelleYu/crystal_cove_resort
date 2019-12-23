@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Cove Resort</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Sacramento&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/fitness.css' %}"> 
+</head>
+
+<body>
+    <ul id="header" class="nav navbar-expand-lg nav-fill">
+        <a href="/">
+            <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        </a><br>
+        <li class="nav-item">
+            <a class="nav-link active" href="/rooms">ROOMS</a>
+        </li>
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESERVATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/reservation">Make a Reservation</a>
+            <a class="dropdown-item" href="/update">Update Existing Reservation</a>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link active" href="/dining">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wellness">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/wedding">SPECIAL EVENTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/contact">CONTACT US</a>
+        </li>
+    </ul>
+    <h1 class="text-center">Fitness</h1>
+    <div class="card w-75">
+        <div class="card-body">
+            <img src="{% static 'hotel_app/images/fitness.jpg' %}" class="card-img-top" alt="fitness_studio"><br>
+            <br>
+            <h5 class="card-title text-center">Fitness On Your Schedule</h5>
+            <p class="card-text text-center">Our new Fitness Studio
+                features an impressive range of cardio and strength training equipment. This state-of-the-art,
+                air-conditioned studio is open early morning through late evening and features:</p>
+            <div class="row">
+                <div class="col sm-6">
+                    <ul>
+                        <li class="subhead">Cardio Fitness Equipment:
+                            <ul>
+                                <li>2 Vision Commercial Treadmills</li>
+                                <li>1 Vision Commercial Elliptical Trainer</li>
+                                <li>1 Matrix Magnetic Resistance Rower</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col sm-6">
+                    <ul>
+                        <li class="subhead">Strength Training Equipment:
+                            <ul>
+                                <li>Dumbbell Free Weights</li>
+                                <li>Abdominal Bench</li>
+                                <li>Flat/Incline/Decline Bench</li>
+                                <li>Stretch Mats</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="card w-75">
+        <div class="card-body">
+            <div class="images_container">
+                <img src="{% static 'hotel_app/images/beach_yoga.jpg' %}" class="card-img-top" alt="beach_yoga"><br>
+                <br>
+                <img src="{% static 'hotel_app/images/studio_yoga.jpg' %}" class="card-img-top" alt="studio_yoga"><br>
+                <br>
+            </div>
+            <h5 class="card-title text-center">Yoga</h5>
+            <p class="card-text text-center">Enjoy complimentary yoga classes at the seashore or inside our fitness
+                studio. All
+                levels welcome! Ask the front desk for more information.</p>
+            <div class="row">
+                <div class="col sm-6">
+                    <ul>
+                        <li class="subhead">Morning Vinyasa Yoga at the Seashore:
+                            <ul>
+                                <li>Daily from 7:00am - 8:00am</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col sm-6">
+                    <ul>
+                        <li class="subhead">Yoga inside Fitness Studio:
+                            <ul>
+                                <li>Vinyasa Yoga: Daily from 7:00am - 8:00am</li>
+                                <li>Yin/Yang Yoga: Daily from 8:00am - 9:00am</li>
+                                <li>Stretch & Release Yoga: Daily from 9:00am - 10:00am</li>
+                                <li>Evening Gentle Meditation Yoga: Dailiy from 6:00pm - 7:00pm</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="return">
+        <a href="/wellness" class="return_link">Return to Wellness Section</a>
+    </div>
+    <br>
+</body>
+
+</html>

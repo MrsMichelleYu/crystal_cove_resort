@@ -1,0 +1,40 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #B3B2AF;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    /* background-color: white; */
+    margin-top: -25px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+.btn {
+    background-color: #79C9C1 !important;
+}
+
+.link {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+    font-family: 'Open Sans', sans-serif;
+    color: #79C9C1;
+}

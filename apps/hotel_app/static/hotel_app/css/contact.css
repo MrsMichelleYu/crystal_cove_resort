@@ -1,0 +1,52 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    /* background-color: white; */
+    margin-top: -25px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    color: #B3B2AF;
+
+}
+
+.text {
+    color: #F29C38;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #79C9C1;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #B3B2AF;
+}
+
+.image {
+    width: 61em;
+}

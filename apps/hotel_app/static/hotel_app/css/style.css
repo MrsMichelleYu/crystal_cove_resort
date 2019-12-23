@@ -1,0 +1,96 @@
+body,
+html {
+    height: 100%;
+    background-image: url("/static/hotel_app/images/resort.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+#footer {
+    margin-top: 407px;
+    height: 200px;
+    background-color: white;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    background-color: white;
+    margin-top: -25px;
+}
+
+
+.slogan {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 20pt;
+    color: #B3B2AF;
+}
+
+/* media query for mobile device  */
+@media only screen and (max-width: 480px) {
+
+    body,
+    html {
+        width: 100vw;
+        height: 100%;
+        background-image: url("/static/hotel_app/images/resort.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+    }
+
+    #logo {
+        width: 8em;
+        height: 3em;
+    }
+
+    #header {
+        width: 8em;
+    }
+
+    #slogan_container {
+        margin-left: 2em;
+        margin-top: 7em;
+    }
+}
+
+/* media query for tablet */
+@media only screen and (min-width: 481px) {
+    #logo {
+        width: 16em;
+    }
+
+    #slogan_container {
+        margin-left: 1em;
+        margin-top: 29em;
+    }
+}
+
+/* media query for desktop  */
+@media only screen and (min-width: 900px) {
+    #logo {
+        width: 17em;
+    }
+
+    #slogan_container {
+        margin-left: 18em;
+        margin-top: 33em;
+    }
+}

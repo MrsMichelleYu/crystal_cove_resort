@@ -1,0 +1,55 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    margin-top: -25px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+.info {
+    color: #B3B2AF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link {
+    color: #79C9C1;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40em;
+}
+
+.btn {
+    background-color: #79C9C1 !important;
+}
+
+.button_container {
+    margin-left: 39%;
+}
+
+.change {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+    color: #79C9C1;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 45%;
+}

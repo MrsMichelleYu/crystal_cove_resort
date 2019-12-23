@@ -1,0 +1,52 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+#header {
+    background-color: white;
+    margin-top: -25px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+h5,
+.hours {
+    font-family: 'Open Sans', sans-serif;
+    color: #79C9C1;
+}
+
+p,
+.return_link {
+    color: #F29C38;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+ul,
+li,
+.times,
+.info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #B3B2AF;
+    list-style-type: none;
+}
+
+.card_container {
+    width: 75%;
+    margin-left: 12%;
+}
+
+.return {
+    text-align: center;
+}

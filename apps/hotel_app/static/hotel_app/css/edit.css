@@ -1,0 +1,36 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    margin-top: -25px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}
+
+.info,
+form {
+    color: #B3B2AF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    background-color: #79C9C1 !important;
+    margin-left: 43em;
+}

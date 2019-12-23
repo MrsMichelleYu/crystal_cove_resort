@@ -1,0 +1,40 @@
+.dropdown-toggle {
+    margin-top: 20px;
+}
+
+a {
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+
+#footer {
+    margin-top: 407px;
+    height: 200px;
+    background-color: white;
+}
+
+p {
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header {
+    background-color: white;
+    margin-top: -25px;
+}
+
+#lookup_reservation,
+button {
+    margin-left: 20em;
+    font-family: 'Open Sans', sans-serif;
+    color: #B3B2AF;
+}
+
+h1 {
+    margin-left: 6em;
+    font-family: 'Sacramento', cursive;
+    color: #79C9C1;
+}

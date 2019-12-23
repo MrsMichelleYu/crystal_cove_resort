@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/room_info.css' %}">
+</head>
+
+<body>
+    <ul id="header" class="nav nav-fill">
+        <a href="/">
+            <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        </a>
+        <li class="nav-item">
+            <a class="nav-link active header1" href="/rooms">ROOMS</a>
+        </li>
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESERVATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/reservation">Make a Reservation</a>
+            <a class="dropdown-item" href="/update">Update Existing Reservation</a>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link active header1" href="/dining">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active header1" href="/wellness">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active header1" href="/wedding">SPECIAL EVENTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active header1" href="/contact">CONTACT US</a>
+        </li>
+    </ul>
+    {% if this_room.name == "king" %}
+    <div class="r_image1">
+        <div class="r_text">
+            <h1></h1>
+        </div>
+    </div>
+    <div class="container">
+        <a href="/reservation" class="btn res">Make Reservation</a>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2>ACCOMODATIONS</h2>
+                <h3>Occupancy</h3>
+                <ul>
+                    <li>
+                        2 Adults
+                    </li>
+                </ul>
+
+                <h3>Bed</h3>
+                <ul>
+                    <li>
+                        King bed
+                    </li>
+                    <li>
+                        Crib (available upon request)
+                    </li>
+                    <li>
+                        Rollaway bed (available upon request)
+                    </li>
+                </ul>
+
+                <h3>View</h3>
+                <ul>
+                    <li>
+                        Coastal, Ocean, Oceanfront
+                    </li>
+                </ul>
+
+                <h3>Floors</h3>
+                <ul>
+                    <li>
+                        2, 3, 4
+                    </li>
+                </ul>
+
+                <h3>Bathroom</h3>
+                <ul>
+                    <li>
+                        Full marble shower and separate bathtub
+                    </li>
+
+                    <li>
+                        Double sink
+                    </li>
+
+                    <li>
+                        Lighted shaving/make-up mirror
+                    </li>
+                </ul>
+
+                <h3>Size</h3>
+                <ul>
+                    <li>
+                        1550 SQ FT | 144 SQ M
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h2>SERVICES &amp; AMENITIES</h2>
+
+                <h3>Bed &amp; Bath</h3>
+                <ul>
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        400-thread count Egyptian cotton linens and sheets
+                    </li>
+
+                    <li>
+                        Lavish master bath with exclusive Asprey Bath essentials
+                    </li>
+
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        Hair dryer in room for convenience
+                    </li>
+                </ul>
+
+                <h3>Room Features</h3>
+                <ul>
+                    <li>
+                        Very large one-bedroom, one and one half bath suite
+                    </li>
+
+                    <li>
+                        Connecting 400-square-foot area
+                    </li>
+
+                    <li>
+                        Spacious living room with wood-burning fireplace
+                    </li>
+
+                    <li>
+                        Separate dining room with seating for six guests
+                    </li>
+
+                    <li>
+                        Expansive balcony overlooking scenic ocean vistas
+                    </li>
+                </ul>
+
+                <h3>Entertainment</h3>
+                <ul>
+                    <li>
+                        iPod docking station, clock and AM/FM radio and alarm
+                    </li>
+
+                    <li>
+                        42-inch LED flat-screen 1080p HDTV
+                    </li>
+
+                    <li>
+                        DVD player for your personal use
+                    </li>
+
+                    <li>
+                        Desk with entertainment connectivity console for laptops
+                    </li>
+
+                    <li>
+                        Digital phones with customized voicemail greeting
+                    </li>
+                </ul>
+
+                <h3>Internet Access</h3>
+                <ul>
+                    <li>
+                        High-speed wireless and secured wired Internet access
+                    </li>
+                </ul>
+
+                <h3>Special Amenities</h3>
+                <ul>
+                    <li>
+                        Full use of the Ritz-Carlton Spa facilities, including preferred appointment times
+                    </li>
+
+                    <li>
+                        VIP housekeeping services with evening turndown service
+                    </li>
+
+                    <li>
+                        24-hour in-room dining available
+                    </li>
+
+                    <li>
+                        In-room single cup coffeemaker
+                    </li>
+
+                    <li>
+                        In-room safe with personal code
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+    {% if this_room.name == "queen" %}
+    <div class="r_image2">
+        <div class="r_text">
+            <h1></h1>
+        </div>
+
+    </div>
+    <div class="container">
+        <a href="/reservation" class="btn res">Make Reservation</a>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2>ACCOMODATIONS</h2>
+                <h3>Occupancy</h3>
+                <ul>
+                    <li>
+                        2 Adults
+                    </li>
+                </ul>
+
+                <h3>Bed</h3>
+                <ul>
+                    <li>
+                        King bed
+                    </li>
+                    <li>
+                        Crib (available upon request)
+                    </li>
+                    <li>
+                        Rollaway bed (available upon request)
+                    </li>
+                </ul>
+
+                <h3>View</h3>
+                <ul>
+                    <li>
+                        Coastal, Ocean, Oceanfront
+                    </li>
+                </ul>
+
+                <h3>Floors</h3>
+                <ul>
+                    <li>
+                        2, 3, 4
+                    </li>
+                </ul>
+
+                <h3>Bathroom</h3>
+                <ul>
+                    <li>
+                        Full marble shower and separate bathtub
+                    </li>
+
+                    <li>
+                        Double sink
+                    </li>
+
+                    <li>
+                        Lighted shaving/make-up mirror
+                    </li>
+                </ul>
+
+                <h3>Size</h3>
+                <ul>
+                    <li>
+                        1550 SQ FT | 144 SQ M
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h2>SERVICES &amp; AMENITIES</h2>
+
+                <h3>Bed &amp; Bath</h3>
+                <ul>
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        400-thread count Egyptian cotton linens and sheets
+                    </li>
+
+                    <li>
+                        Lavish master bath with exclusive Asprey Bath essentials
+                    </li>
+
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        Hair dryer in room for convenience
+                    </li>
+                </ul>
+
+                <h3>Room Features</h3>
+                <ul>
+                    <li>
+                        Very large one-bedroom, one and one half bath suite
+                    </li>
+
+                    <li>
+                        Connecting 400-square-foot area
+                    </li>
+
+                    <li>
+                        Spacious living room with wood-burning fireplace
+                    </li>
+
+                    <li>
+                        Separate dining room with seating for six guests
+                    </li>
+
+                    <li>
+                        Expansive balcony overlooking scenic ocean vistas
+                    </li>
+                </ul>
+
+                <h3>Entertainment</h3>
+                <ul>
+                    <li>
+                        iPod docking station, clock and AM/FM radio and alarm
+                    </li>
+
+                    <li>
+                        42-inch LED flat-screen 1080p HDTV
+                    </li>
+
+                    <li>
+                        DVD player for your personal use
+                    </li>
+
+                    <li>
+                        Desk with entertainment connectivity console for laptops
+                    </li>
+
+                    <li>
+                        Digital phones with customized voicemail greeting
+                    </li>
+                </ul>
+
+                <h3>Internet Access</h3>
+                <ul>
+                    <li>
+                        High-speed wireless and secured wired Internet access
+                    </li>
+                </ul>
+
+                <h3>Special Amenities</h3>
+                <ul>
+                    <li>
+                        Full use of the Ritz-Carlton Spa facilities, including preferred appointment times
+                    </li>
+
+                    <li>
+                        VIP housekeeping services with evening turndown service
+                    </li>
+
+                    <li>
+                        24-hour in-room dining available
+                    </li>
+
+                    <li>
+                        In-room single cup coffeemaker
+                    </li>
+
+                    <li>
+                        In-room safe with personal code
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+
+    {% if this_room.name == "deluxe" %}
+
+    <div class="r_image3">
+        <div class="r_text">
+            <h1></h1>
+        </div>
+
+    </div>
+    <div class="container">
+        <a href="/reservation" class="btn res">Make Reservation</a>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2>ACCOMODATIONS</h2>
+                <h3>Occupancy</h3>
+                <ul>
+                    <li>
+                        2 Adults
+                    </li>
+                </ul>
+
+                <h3>Bed</h3>
+                <ul>
+                    <li>
+                        King bed
+                    </li>
+                    <li>
+                        Crib (available upon request)
+                    </li>
+                    <li>
+                        Rollaway bed (available upon request)
+                    </li>
+                </ul>
+
+                <h3>View</h3>
+                <ul>
+                    <li>
+                        Coastal, Ocean, Oceanfront
+                    </li>
+                </ul>
+
+                <h3>Floors</h3>
+                <ul>
+                    <li>
+                        2, 3, 4
+                    </li>
+                </ul>
+
+                <h3>Bathroom</h3>
+                <ul>
+                    <li>
+                        Full marble shower and separate bathtub
+                    </li>
+
+                    <li>
+                        Double sink
+                    </li>
+
+                    <li>
+                        Lighted shaving/make-up mirror
+                    </li>
+                </ul>
+
+                <h3>Size</h3>
+                <ul>
+                    <li>
+                        1550 SQ FT | 144 SQ M
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h2>SERVICES &amp; AMENITIES</h2>
+
+                <h3>Bed &amp; Bath</h3>
+                <ul>
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        400-thread count Egyptian cotton linens and sheets
+                    </li>
+
+                    <li>
+                        Lavish master bath with exclusive Asprey Bath essentials
+                    </li>
+
+                    <li>
+                        Plush terry cloth bathrobes for two guests
+                    </li>
+
+                    <li>
+                        Hair dryer in room for convenience
+                    </li>
+                </ul>
+
+                <h3>Room Features</h3>
+                <ul>
+                    <li>
+                        Very large one-bedroom, one and one half bath suite
+                    </li>
+
+                    <li>
+                        Connecting 400-square-foot area
+                    </li>
+
+                    <li>
+                        Spacious living room with wood-burning fireplace
+                    </li>
+
+                    <li>
+                        Separate dining room with seating for six guests
+                    </li>
+
+                    <li>
+                        Expansive balcony overlooking scenic ocean vistas
+                    </li>
+                </ul>
+
+                <h3>Entertainment</h3>
+                <ul>
+                    <li>
+                        iPod docking station, clock and AM/FM radio and alarm
+                    </li>
+
+                    <li>
+                        42-inch LED flat-screen 1080p HDTV
+                    </li>
+
+                    <li>
+                        DVD player for your personal use
+                    </li>
+
+                    <li>
+                        Desk with entertainment connectivity console for laptops
+                    </li>
+
+                    <li>
+                        Digital phones with customized voicemail greeting
+                    </li>
+                </ul>
+
+                <h3>Internet Access</h3>
+                <ul>
+                    <li>
+                        High-speed wireless and secured wired Internet access
+                    </li>
+                </ul>
+
+                <h3>Special Amenities</h3>
+                <ul>
+                    <li>
+                        Full use of the Ritz-Carlton Spa facilities, including preferred appointment times
+                    </li>
+
+                    <li>
+                        VIP housekeeping services with evening turndown service
+                    </li>
+
+                    <li>
+                        24-hour in-room dining available
+                    </li>
+
+                    <li>
+                        In-room single cup coffeemaker
+                    </li>
+
+                    <li>
+                        In-room safe with personal code
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+
+</body>
+
+</html>
